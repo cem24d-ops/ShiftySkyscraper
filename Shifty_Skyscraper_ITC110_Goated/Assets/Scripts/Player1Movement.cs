@@ -5,6 +5,7 @@ public class PlayerTestMovement : MonoBehaviour
     public KeyCode leftKey = KeyCode.A;
     public KeyCode rightKey = KeyCode.D;
     public KeyCode jumpKey = KeyCode.W;
+    public KeyCode interactKey = KeyCode.S;
     public float moveSpeed = 10.0f;
 
     public float jumpForce = 500.0f;
@@ -15,7 +16,7 @@ public class PlayerTestMovement : MonoBehaviour
 
     public bool shouldJump = false;
 
-    
+    public InteractionDetector interactionDetector;
 
     // Start is called before the first frame update
     void Start()
@@ -44,6 +45,12 @@ public class PlayerTestMovement : MonoBehaviour
         if (Input.GetKeyDown(jumpKey) && isGrounded)
         {
             shouldJump = true;
+        }
+
+        // get interact input
+        if (Input.GetKeyDown(interactKey))
+        {
+            interactionDetector.OnInteract();
         }
     }
 

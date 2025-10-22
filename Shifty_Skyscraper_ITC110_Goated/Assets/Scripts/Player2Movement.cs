@@ -5,6 +5,7 @@ public class Player2Movement : MonoBehaviour
     public KeyCode leftKey = KeyCode.LeftArrow;
     public KeyCode rightKey = KeyCode.RightArrow;
     public KeyCode jumpKey = KeyCode.UpArrow;
+    public KeyCode interactKey = KeyCode.DownArrow;
     public float moveSpeed = 10.0f;
 
     public float jumpForce = 500.0f;
@@ -14,6 +15,7 @@ public class Player2Movement : MonoBehaviour
     public bool isGrounded = false;
 
     public bool shouldJump = false;
+    public InteractionDetector interactionDetector;
 
     // Start is called before the first frame update
     void Start()
@@ -42,6 +44,12 @@ public class Player2Movement : MonoBehaviour
         if (Input.GetKeyDown(jumpKey) && isGrounded)
         {
             shouldJump = true;
+        }
+
+        // get interact input
+        if (Input.GetKeyDown(interactKey))
+        {
+            interactionDetector.OnInteract();
         }
     }
 
