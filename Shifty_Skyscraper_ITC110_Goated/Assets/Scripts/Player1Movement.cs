@@ -15,6 +15,8 @@ public class PlayerTestMovement : MonoBehaviour
 
     public bool shouldJump = false;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -59,6 +61,7 @@ public class PlayerTestMovement : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        if (other.gameObject.CompareTag("Ground"))
             isGrounded = true;
     }
 

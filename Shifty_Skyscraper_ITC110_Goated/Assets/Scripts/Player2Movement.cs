@@ -59,6 +59,7 @@ public class Player2Movement : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        if (other.gameObject.CompareTag("Ground"))
             isGrounded = true;
     }
 
