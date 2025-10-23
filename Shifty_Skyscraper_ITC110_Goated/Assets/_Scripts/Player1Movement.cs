@@ -1,20 +1,21 @@
 using UnityEngine;
 
-public class Player2Movement : MonoBehaviour
+public class PlayerTestMovement : MonoBehaviour
 {
-    public KeyCode leftKey = KeyCode.LeftArrow;
-    public KeyCode rightKey = KeyCode.RightArrow;
-    public KeyCode jumpKey = KeyCode.UpArrow;
-    public KeyCode interactKey = KeyCode.DownArrow;
+    public KeyCode leftKey = KeyCode.A;
+    public KeyCode rightKey = KeyCode.D;
+    public KeyCode jumpKey = KeyCode.W;
+    public KeyCode interactKey = KeyCode.S;
     public float moveSpeed = 10.0f;
 
     public float jumpForce = 500.0f;
 
     Rigidbody2D rb;
 
-    public bool isGrounded = false;
+    public bool isGrounded = true;
 
     public bool shouldJump = false;
+
     public InteractionDetector interactionDetector;
 
     // Start is called before the first frame update
@@ -73,7 +74,7 @@ public class Player2Movement : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
+        if (other.gameObject.tag == "Ground")
             isGrounded = false;
     }
 }
-
