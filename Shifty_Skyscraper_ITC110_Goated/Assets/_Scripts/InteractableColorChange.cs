@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class TEST_ColorChange : MonoBehaviour
+public class InteractableColorChange : MonoBehaviour
 {
     public InteractableSpriteChanger spriteChanger;
 
