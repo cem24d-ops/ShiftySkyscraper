@@ -14,6 +14,7 @@ public class InteractableTrigger : MonoBehaviour
         {
             if (enableObject1 != null)
                 enableObject1.SetActive(statusChange);
+            
             if (enableObject2 != null)
                 enableObject2.SetActive(statusChange);
         }

@@ -43,7 +43,8 @@ public class Player2Movement : MonoBehaviour
         // get jump input
         if (Input.GetKeyDown(jumpKey) && isGrounded)
         {
-            shouldJump = true;
+            //push the rigidbody UP
+            rb.AddForce(transform.up * jumpForce);
         }
 
         // get interact input
@@ -53,28 +54,18 @@ public class Player2Movement : MonoBehaviour
         }
     }
 
-    void FixedUpdate()
+    void OnTriggerStay2D(Collider2D other)
     {
-        if (shouldJump == true)
-        {
-            // quickly set back to false so we don't double-jump
-            shouldJump = false;
-
-            //push the rigidbody UP
-            rb.AddForce(transform.up * jumpForce);
-        }
-    }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Ground"))
+        if (other.gameObject.tag == "Ground")
             isGrounded = true;
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Ground")
-            isGrounded = false;
+        if (other.gameObject.tag != "Ground")
+            return;
+
+        isGrounded = false;
     }
 }
 
