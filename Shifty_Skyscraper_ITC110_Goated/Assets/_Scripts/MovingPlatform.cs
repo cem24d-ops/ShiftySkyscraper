@@ -25,7 +25,6 @@ public class MovingPlatform : MonoBehaviour
         {
             directionX = -1.0f;
         }
-
         // changing from going left to right
         if ( (distanceX > 0 && transform.localPosition.x <= startX) || (distanceX < 0 && transform.localPosition.x <= startX + distanceX) )
         {
@@ -38,7 +37,6 @@ public class MovingPlatform : MonoBehaviour
         {
             directionY = -1.0f;
         }
-
         // Changing from going down to going up
         if ((distanceY > 0 && transform.localPosition.y <= startY) || (distanceY < 0 && transform.localPosition.y <= startY + distanceY))
         {

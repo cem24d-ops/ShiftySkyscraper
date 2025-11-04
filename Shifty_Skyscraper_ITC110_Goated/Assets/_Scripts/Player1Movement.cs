@@ -57,7 +57,7 @@ public class PlayerTestMovement : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Ground"))
+        if (other.gameObject.tag == "Ground")
             isGrounded = true;
     }
 
