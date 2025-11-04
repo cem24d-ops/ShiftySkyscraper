@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class DoorInteract : MonoBehaviour, IInteractable
 {
     public bool isOpened { get; private set; }
+    public int minInclusive = 0, maxExclusive = 0;
 
     public bool CanInteract()
     {
@@ -14,7 +15,15 @@ public class DoorInteract : MonoBehaviour, IInteractable
     }
     public void Interact()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        int randomLevel = Random.Range(minInclusive, maxExclusive);
+        if (randomLevel == 2)
+            Debug.Log("Level 1");
+        if (randomLevel == 3)
+        {
+            Debug.Log("Level 2A");
+        }
+
+        SceneManager.LoadScene(randomLevel);
     }
     
 }
