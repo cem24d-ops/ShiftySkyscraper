@@ -184,7 +184,8 @@ GameObject:
   - component: {fileID: 7970815152042293411}
   - component: {fileID: 4015066245595647616}
   - component: {fileID: 6400282870578248133}
-  - component: {fileID: 2743379730733313240}
+  - component: {fileID: 6231076884537393530}
+  - component: {fileID: 9181693753610989674}
   m_Layer: 0
   m_Name: Player1Dummy
   m_TagString: Player
@@ -200,12 +201,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4522802032466338206}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.5, y: -11.5, z: 0}
   m_LocalScale: {x: 0.5, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8678481413405171815}
+  - {fileID: 1430940908747812765}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &391598196988994462
@@ -385,9 +387,9 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 0.1}
+  m_Size: {x: 0.2, y: 0.1}
   m_EdgeRadius: 0
---- !u!114 &2743379730733313240
+--- !u!114 &6231076884537393530
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -396,7 +398,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 4522802032466338206}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c97d834d2337c1648be9d6583443fc5c, type: 3}
+  m_Script: {fileID: 11500000, guid: 605604de5c2320241a9b4c01f49c33ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startTimeBetweenAttack: 0.3
+  attackKey: 113
+  attackPos: {fileID: 1430940908747812765}
+  whatIsEnemy:
+    serializedVersion: 2
+    m_Bits: 256
+  attackRange: 0.5
+  damage: 1
+--- !u!114 &9181693753610989674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4522802032466338206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8158147eb9a53448ba468cd2527aeb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   leftKey: 97
@@ -405,6 +427,37 @@ MonoBehaviour:
   interactKey: 115
   moveSpeed: 5
   jumpForce: 350
-  isGrounded: 0
+  isGrounded: 1
   shouldJump: 0
   interactionDetector: {fileID: 8754656351622092161}
+--- !u!1 &7195115015408371692
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1430940908747812765}
+  m_Layer: 0
+  m_Name: AttackPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1430940908747812765
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7195115015408371692}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.9, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7676616011775729798}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

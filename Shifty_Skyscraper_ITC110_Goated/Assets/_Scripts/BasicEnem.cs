@@ -2,49 +2,50 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BasicEnem : MonoBehaviour
+public class Enem : MonoBehaviour
 {
 
+    public int health;
     public float speed;
     public bool isChasing = false;
-    private Transform player;
-    private int playersInRange = 0;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    /*
-    void Start()
-    {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-    }
-    */
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        // Check if the object entering the trigger is the player
-        if (other.CompareTag("Player"))
-        {
-            player = other.GetComponent<Transform>();
-            playersInRange++;
-            isChasing = true;
-        }
-    }
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        // Check if the object exiting the trigger is the player
-        if (other.CompareTag("Player"))
-        {
-            playersInRange--;
-            if (playersInRange <= 0)
-            {
-                isChasing = false;
-            }
-        }
-    }
+    public Transform player1;
+    public Transform player2;
+    public float detectionRange = 10f;
+
     // Update is called once per frame
     void Update()
     {
-        // Move towards the player if chasing
-        if (player != null && isChasing)
+        float distanceToPlayer1 = Vector2.Distance(transform.position, player1.position);
+        float distanceToPlayer2 = Vector2.Distance(transform.position, player2.position);
+
+        bool player1InRange = distanceToPlayer1 <= detectionRange;
+        bool player2InRange = distanceToPlayer2 <= detectionRange;
+
+        if (player1InRange || player2InRange)
         {
-            transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+            isChasing = true;
+        }
+        else
+        {
+            isChasing = false;
+        }
+
+        if (isChasing)
+        {
+            Transform targetPlayer = (distanceToPlayer1 < distanceToPlayer2) ? player1 : player2;
+            Vector2 direction = (targetPlayer.position - transform.position).normalized;
+            transform.position = Vector2.MoveTowards(transform.position, targetPlayer.position, speed * Time.deltaTime);
+        }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+        Debug.Log("Enemy Hit! Remaining Health: " + health);
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+            Debug.Log("Enemy Defeated!");
         }
     }
 }
