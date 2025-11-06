@@ -19277,8 +19277,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statusChange: 1
-  objectAmount: 1
-  triggerSize: 4
   enableObject:
   - {fileID: 863703811}
   objectTrigger:

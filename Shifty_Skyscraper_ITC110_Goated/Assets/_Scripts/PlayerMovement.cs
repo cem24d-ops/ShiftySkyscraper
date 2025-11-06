@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Player2Movement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     public KeyCode leftKey = KeyCode.LeftArrow;
     public KeyCode rightKey = KeyCode.RightArrow;

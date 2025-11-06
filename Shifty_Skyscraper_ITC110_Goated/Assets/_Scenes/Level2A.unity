@@ -21471,8 +21471,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statusChange: 1
-  objectAmount: 1
-  triggerSize: 1
   enableObject:
   - {fileID: 653862487}
   objectTrigger:
@@ -21490,8 +21488,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statusChange: 0
-  objectAmount: 1
-  triggerSize: 4
   enableObject:
   - {fileID: 143404722}
   objectTrigger:
@@ -21512,8 +21508,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statusChange: 1
-  objectAmount: 2
-  triggerSize: 1
   enableObject:
   - {fileID: 1253969543}
   - {fileID: 877024416}
@@ -21532,8 +21526,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statusChange: 0
-  objectAmount: 1
-  triggerSize: 2
   enableObject:
   - {fileID: 815062044}
   objectTrigger:
@@ -21552,8 +21544,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statusChange: 1
-  objectAmount: 8
-  triggerSize: 2
   enableObject:
   - {fileID: 818716296}
   - {fileID: 1258433436}
