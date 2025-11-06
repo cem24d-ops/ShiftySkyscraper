@@ -215,8 +215,8 @@ GameObject:
   - component: {fileID: 6866090567135326014}
   - component: {fileID: 5132594707112069735}
   - component: {fileID: 5777270080482136739}
-  - component: {fileID: 8400430385117088298}
   - component: {fileID: 5734827514966026503}
+  - component: {fileID: 7464852432339259380}
   m_Layer: 0
   m_Name: Player2Dummy
   m_TagString: Player
@@ -420,27 +420,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.2, y: 0.1}
   m_EdgeRadius: 0
---- !u!114 &8400430385117088298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4867449713398382508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8158147eb9a53448ba468cd2527aeb7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leftKey: 276
-  rightKey: 275
-  jumpKey: 273
-  interactKey: 274
-  moveSpeed: 5
-  jumpForce: 350
-  isGrounded: 0
-  shouldJump: 0
-  interactionDetector: {fileID: 3770342088784213476}
 --- !u!114 &5734827514966026503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -460,4 +439,31 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   attackRange: 0.5
-  damage: 1
+  damage: 2
+  fireForward: 0
+  bulletForce: 1500
+  inFireMode: 0
+  switchModeKey: 46
+  bullet: {fileID: 863343364138403590, guid: 2657098f8e79f6d4080e914d31010c56, type: 3}
+  firePoint: {fileID: 643753595765783694}
+--- !u!114 &7464852432339259380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4867449713398382508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8158147eb9a53448ba468cd2527aeb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftKey: 276
+  rightKey: 275
+  jumpKey: 273
+  interactKey: 274
+  moveSpeed: 5
+  jumpForce: 350
+  isGrounded: 1
+  shouldJump: 0
+  interactionDetector: {fileID: 3770342088784213476}

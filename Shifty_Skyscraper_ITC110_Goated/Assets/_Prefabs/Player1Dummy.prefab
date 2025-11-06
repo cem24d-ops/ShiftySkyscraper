@@ -408,7 +408,13 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   attackRange: 0.5
-  damage: 1
+  damage: 2
+  fireForward: 0
+  bulletForce: 1500
+  inFireMode: 0
+  switchModeKey: 101
+  bullet: {fileID: 863343364138403590, guid: 2657098f8e79f6d4080e914d31010c56, type: 3}
+  firePoint: {fileID: 7195115015408371692}
 --- !u!114 &9181693753610989674
 MonoBehaviour:
   m_ObjectHideFlags: 0

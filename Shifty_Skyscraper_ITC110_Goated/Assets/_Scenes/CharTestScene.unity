@@ -376,48 +376,11 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!114 &372109354 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3770342088784213476, guid: 2d165d3bc0986a54ab5d5f4469e462a9, type: 3}
-  m_PrefabInstance: {fileID: 6739944997777148698}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e25c8c028b50354ba84852dec5b3b38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &476687519 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4867449713398382508, guid: 2d165d3bc0986a54ab5d5f4469e462a9, type: 3}
-  m_PrefabInstance: {fileID: 6739944997777148698}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &476687525 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3661683939715486072, guid: 2d165d3bc0986a54ab5d5f4469e462a9, type: 3}
   m_PrefabInstance: {fileID: 6739944997777148698}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &476687527
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 476687519}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8158147eb9a53448ba468cd2527aeb7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leftKey: 276
-  rightKey: 275
-  jumpKey: 273
-  interactKey: 274
-  moveSpeed: 5
-  jumpForce: 350
-  isGrounded: 1
-  shouldJump: 0
-  interactionDetector: {fileID: 372109354}
 --- !u!1 &587571534
 GameObject:
   m_ObjectHideFlags: 0
@@ -845,6 +808,10 @@ PrefabInstance:
       propertyPath: player2
       value: 
       objectReference: {fileID: 476687525}
+    - target: {fileID: 8249573846289264967, guid: 3b20d7d154c70204d96ad3d679c49c7a, type: 3}
+      propertyPath: detectionRange
+      value: 7.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8277507750018394725, guid: 3b20d7d154c70204d96ad3d679c49c7a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.86
@@ -946,14 +913,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player2Dummy
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8400430385117088298, guid: 2d165d3bc0986a54ab5d5f4469e462a9, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4867449713398382508, guid: 2d165d3bc0986a54ab5d5f4469e462a9, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 476687527}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d165d3bc0986a54ab5d5f4469e462a9, type: 3}
 --- !u!1001 &8026403096411863804
 PrefabInstance:
