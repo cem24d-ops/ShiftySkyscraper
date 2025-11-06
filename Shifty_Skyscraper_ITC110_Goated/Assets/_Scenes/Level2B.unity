@@ -21442,13 +21442,13 @@ PrefabInstance:
       addedObject: {fileID: 1092180804}
     - targetCorrespondingSourceObject: {fileID: 3880613216307876845, guid: f1091481ed3aa404487fab2f9997eb5d, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 1092180801}
+    - targetCorrespondingSourceObject: {fileID: 3880613216307876845, guid: f1091481ed3aa404487fab2f9997eb5d, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 1092180803}
     - targetCorrespondingSourceObject: {fileID: 3880613216307876845, guid: f1091481ed3aa404487fab2f9997eb5d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1092180802}
-    - targetCorrespondingSourceObject: {fileID: 3880613216307876845, guid: f1091481ed3aa404487fab2f9997eb5d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1092180801}
     - targetCorrespondingSourceObject: {fileID: 3880613216307876845, guid: f1091481ed3aa404487fab2f9997eb5d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1092180800}
@@ -21533,11 +21533,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   statusChange: 0
   objectAmount: 1
-  triggerSize: 2
+  triggerSize: 1
   enableObject:
   - {fileID: 815062044}
   objectTrigger:
-  - {fileID: 324602830}
   - {fileID: 1711221536}
 --- !u!114 &1092180804
 MonoBehaviour:
