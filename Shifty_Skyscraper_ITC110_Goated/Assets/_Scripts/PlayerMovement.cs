@@ -6,9 +6,11 @@ public class PlayerMovement : MonoBehaviour
     public KeyCode rightKey = KeyCode.RightArrow;
     public KeyCode jumpKey = KeyCode.UpArrow;
     public KeyCode interactKey = KeyCode.DownArrow;
+    public KeyCode pauseKey = KeyCode.Space;
     public float moveSpeed = 10.0f;
 
     public float jumpForce = 500.0f;
+    public RectTransform pauseMenuPanel;
 
     Rigidbody2D rb;
 
@@ -51,6 +53,12 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(interactKey))
         {
             interactionDetector.OnInteract();
+        }
+
+        if (Input.GetKeyDown(pauseKey))
+        {
+            pauseMenuPanel.gameObject.SetActive(true);
+            Debug.Log("Pause key pressed");
         }
     }
 

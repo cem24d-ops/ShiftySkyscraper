@@ -431,8 +431,10 @@ MonoBehaviour:
   rightKey: 100
   jumpKey: 119
   interactKey: 115
+  pauseKey: 32
   moveSpeed: 5
   jumpForce: 350
+  pauseMenuPanel: {fileID: 0}
   isGrounded: 1
   shouldJump: 0
   interactionDetector: {fileID: 8754656351622092161}
