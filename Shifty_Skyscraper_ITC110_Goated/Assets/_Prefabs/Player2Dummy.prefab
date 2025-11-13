@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8110465776187162912}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AttackPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2717539543369282134}
   - component: {fileID: 867201207196377226}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: InteractionIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 305996241676802882}
   - component: {fileID: 4747080710205927937}
   - component: {fileID: 3770342088784213476}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: InteractionDetector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -217,7 +217,7 @@ GameObject:
   - component: {fileID: 5777270080482136739}
   - component: {fileID: 5734827514966026503}
   - component: {fileID: 7464852432339259380}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player2Dummy
   m_TagString: Player
   m_Icon: {fileID: 0}
