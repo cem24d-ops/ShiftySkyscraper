@@ -18342,7 +18342,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8069604480281746249, guid: a5504a97e99b245468bdba7584c38a00, type: 3}
       propertyPath: m_Name
-      value: Door
+      value: Elevator
       objectReference: {fileID: 0}
     - target: {fileID: 8069604480281746249, guid: a5504a97e99b245468bdba7584c38a00, type: 3}
       propertyPath: m_IsActive
@@ -21471,10 +21471,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statusChange: 1
+  triggerSize: 4
   enableObject:
   - {fileID: 653862487}
   objectTrigger:
   - {fileID: 1921813798}
+  triggered: 0
 --- !u!114 &1092180801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21488,6 +21490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statusChange: 0
+  triggerSize: 4
   enableObject:
   - {fileID: 143404722}
   objectTrigger:
@@ -21495,6 +21498,7 @@ MonoBehaviour:
   - {fileID: 1711221536}
   - {fileID: 818716297}
   - {fileID: 1258433437}
+  triggered: 0
 --- !u!114 &1092180802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21508,11 +21512,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statusChange: 1
+  triggerSize: 4
   enableObject:
   - {fileID: 1253969543}
   - {fileID: 877024416}
   objectTrigger:
   - {fileID: 818716297}
+  triggered: 0
 --- !u!114 &1092180803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21526,11 +21532,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statusChange: 0
+  triggerSize: 4
   enableObject:
   - {fileID: 815062044}
   objectTrigger:
   - {fileID: 324602830}
   - {fileID: 1711221536}
+  triggered: 0
 --- !u!114 &1092180804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21544,6 +21552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statusChange: 1
+  triggerSize: 4
   enableObject:
   - {fileID: 818716296}
   - {fileID: 1258433436}
@@ -21556,6 +21565,7 @@ MonoBehaviour:
   objectTrigger:
   - {fileID: 324602830}
   - {fileID: 1711221536}
+  triggered: 0
 --- !u!1 &1130940552
 GameObject:
   m_ObjectHideFlags: 0

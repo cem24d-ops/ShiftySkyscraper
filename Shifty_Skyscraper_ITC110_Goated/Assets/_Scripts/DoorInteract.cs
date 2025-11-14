@@ -13,6 +13,7 @@ public class DoorInteract : MonoBehaviour, IInteractable
         //can only interact if the door is closed
         return !isOpened;
     }
+
     public void Interact()
     {
         int randomLevel = Random.Range(minInclusive, maxExclusive);
