@@ -10,38 +10,41 @@ public class BasicEnemAttack : MonoBehaviour
     public float attackRate = 1f;
     public float attackRange = 0.5f;
     public int attackDamage = 1;
+    Canvas gameCanvas;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Update()
     {
-        if (playerLayers == null)
-        {
-            Debug.LogWarning("Player Layers not assigned in BasicEnemAttack script.");
-        }
-
+        // Check distance to both players
         float distanceToPlayer1 = Vector2.Distance(transform.position, player1.position);
         float distanceToPlayer2 = Vector2.Distance(transform.position, player2.position);
 
+        // If either player is within attack range and cooldown has passed, attack
         if (Time.time >= nextAttackTime)
         {
+            Debug.Log("Enemy is checking for attack opportunity.");
+
+            // Check if either player is within attack range
             if (distanceToPlayer1 <= attackRange || distanceToPlayer2 <= attackRange)
             {
+                Debug.Log("Enemy is attacking!");
+                nextAttackTime = Time.time + 1f / attackRate;
                 Attack();
+                
             }
         }
     }
     
     public void Attack()
     {
+        // Detect players in range of attack
         Collider2D[] hitPlayers = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayers);
+        gameCanvas = GameObject.Find("Canvas").GetComponent<Canvas>();
 
+        // Damage players
         foreach (Collider2D player in hitPlayers)
         {
-            PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
-            if (playerHealth != null)
-            {
-                playerHealth.TakeDamage(attackDamage);
-                Debug.Log("Enemy Attacked Player! Dealt " + attackDamage + " damage.");
-            }
+            Debug.Log("Player hit: " + player.name);
+            gameCanvas.GetComponent<GameManager>().LoseLife();
         }
     }
 

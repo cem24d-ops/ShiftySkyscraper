@@ -28,4 +28,17 @@ public class GameManager : MonoBehaviour
         //scoreText.text = "Keys: " + numberOfPickups;
         livesText.text = "Lives Remaining: " + numberOfLives;
     }
+
+    public void LoseLife()
+    {
+        numberOfLives--;
+        audioSource.Play();
+
+        if (numberOfLives <= 0)
+        {
+            Debug.Log("Game Over!");
+            Application.Quit();
+            // Implement game over logic here (e.g., reload scene, show game over screen)
+        }
+    }
 }

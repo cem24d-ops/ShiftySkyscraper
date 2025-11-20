@@ -58,6 +58,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(pauseKey))
         {
             pauseMenuPanel.gameObject.SetActive(true);
+            Time.timeScale = 0f;
             Debug.Log("Pause key pressed");
         }
     }
