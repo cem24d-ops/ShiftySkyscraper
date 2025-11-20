@@ -17,14 +17,21 @@ public class DoorInteract : MonoBehaviour, IInteractable
     public void Interact()
     {
         int randomLevel = Random.Range(minInclusive, maxExclusive);
-        if (randomLevel == 2)
-            Debug.Log("Level 1");
-        if (randomLevel == 3)
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
+
+        if (randomLevel != currentScene)
         {
-            Debug.Log("Level 2A");
+            SceneManager.LoadScene(randomLevel);
         }
 
-        SceneManager.LoadScene(randomLevel);
+        while (randomLevel == currentScene)
+        {
+            randomLevel = Random.Range(minInclusive, maxExclusive);
+
+            if (randomLevel != currentScene)
+                SceneManager.LoadScene(randomLevel);
+        }
+        
     }
     
 }
