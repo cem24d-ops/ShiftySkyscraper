@@ -1,17 +1,20 @@
 using UnityEngine;
 public class DynamicTrigger : MonoBehaviour
 {
-    // true will enable the object, false will disable the object (has to be disabled for true to work, and vice versa)
-    public bool statusChange = true; // can be changed in the inspector
-    int objectAmount = 0;
-    public int triggerSize = 4;
+    bool enable = true;
+    bool disable = false;
+    int enableSize = 0;
+    int disableSize = 0;
+    public int triggerSize = 0;
     public GameObject[] enableObject;
+    public GameObject[] disableObject;
     public InteractableSpriteChanger[] objectTrigger;
 
     public int triggered = 0;
     void Start()
     {
-        objectAmount = enableObject.Length;
+        enableSize = enableObject.Length;
+        disableSize = disableObject.Length;
         triggerSize = objectTrigger.Length;
     }
     
@@ -34,9 +37,13 @@ public class DynamicTrigger : MonoBehaviour
 
             if (triggered == triggerSize)
             {
-                for (int i = 0; i < objectAmount; i++)
+                for (int i = 0; i < enableSize; i++)
                 {
-                    enableObject[i].SetActive(statusChange);
+                    enableObject[i].SetActive(enable);
+                }
+                for (int j = 0; j < disableSize; j++)
+                {
+                    disableObject[j].SetActive(disable);
                 }
             }
         }
