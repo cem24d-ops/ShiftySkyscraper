@@ -1,6 +1,7 @@
 using UnityEngine;
 public class DynamicTrigger : MonoBehaviour
 {
+    public string Title;
     bool enable = true;
     bool disable = false;
     int enableSize = 0;
@@ -9,6 +10,7 @@ public class DynamicTrigger : MonoBehaviour
     public GameObject[] enableObject;
     public GameObject[] disableObject;
     public InteractableSpriteChanger[] objectTrigger;
+    
 
     public int triggered = 0;
     void Start()
