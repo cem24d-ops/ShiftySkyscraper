@@ -166,3 +166,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
+  playerLayers:
+    serializedVersion: 2
+    m_Bits: 128

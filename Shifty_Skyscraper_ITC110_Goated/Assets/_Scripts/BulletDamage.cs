@@ -16,5 +16,14 @@ public class BulletDamage : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+        else if (other.CompareTag("RangedEnem"))
+        {
+            RangedEnem rangedEnem = other.GetComponent<RangedEnem>();
+            if (rangedEnem != null)
+            {
+                rangedEnem.TakeDamage(damage);
+                Destroy(gameObject);
+            }
+        }
     }
 }

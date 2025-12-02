@@ -6,6 +6,7 @@ public class RangedEnemAttack : MonoBehaviour
     public LayerMask playerLayers;
     public Transform player1;
     public Transform player2;
+    public Transform targetPlayer;
     public float nextAttackTime = 0f;
     public float attackRate = 1f;
     public float attackRange = 0.5f;
@@ -26,9 +27,9 @@ public class RangedEnemAttack : MonoBehaviour
             Debug.Log("Ranged Enemy is checking for attack opportunity.");
 
             // Check if either player is within attack range
-            if (distanceToPlayer1 <= attackRange || distanceToPlayer2 <= attackRange)
+            if (targetPlayer != null && Vector2.Distance(transform.position, targetPlayer.position) <= attackRange)
             {
-                xDirection = (player1.position.x - transform.position.x);
+                xDirection = (targetPlayer.position - transform.position).x;
                 if (xDirection > 0)
                 {
                     fireForward = true;

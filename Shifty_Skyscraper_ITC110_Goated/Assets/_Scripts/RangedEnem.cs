@@ -35,6 +35,20 @@ public class RangedEnem : MonoBehaviour
             Transform targetPlayer = (distanceToPlayer1 < distanceToPlayer2) ? player1 : player2;
             Vector2 direction = (targetPlayer.position - transform.position).normalized;
             transform.position = Vector2.MoveTowards(transform.position, targetPlayer.position, speed * Time.deltaTime);
+
+            RangedEnemAttack rangedAttack = GetComponent<RangedEnemAttack>();
+            rangedAttack.targetPlayer = targetPlayer;
+            if (rangedAttack != null)
+            {
+                if (targetPlayer.position.x > transform.position.x)
+                {
+                    rangedAttack.fireForward = true;
+                }
+                else
+                {
+                    rangedAttack.fireForward = false;
+                }
+            }
         }
     }
 
