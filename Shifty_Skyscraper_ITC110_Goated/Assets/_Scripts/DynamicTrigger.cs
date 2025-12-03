@@ -7,8 +7,7 @@ public class DynamicTrigger : MonoBehaviour
     int enableSize = 0;
     int disableSize = 0;
     public int triggerSize = 0;
-    public GameObject[] enableObject;
-    public GameObject[] disableObject;
+    public GameObject[] enableObject, disableObject;
     public InteractableSpriteChanger[] objectTrigger;
     
 
