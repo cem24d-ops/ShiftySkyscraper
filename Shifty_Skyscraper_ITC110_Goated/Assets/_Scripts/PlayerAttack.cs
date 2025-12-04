@@ -107,6 +107,12 @@ public class PlayerAttack : MonoBehaviour
         {
             rangedEnemiesToDamage[j].GetComponent<RangedEnem>().TakeDamage(damage);
         }
+
+        Collider2D[] dashEnemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemy);
+        for (int k = 0; k < dashEnemiesToDamage.Length; k++)
+        {
+            dashEnemiesToDamage[k].GetComponent<DashEnem>().TakeDamage(damage);
+        }
     }
 
     private void OnDrawGizmosSelected()

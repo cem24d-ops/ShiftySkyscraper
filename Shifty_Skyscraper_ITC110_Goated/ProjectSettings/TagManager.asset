@@ -8,6 +8,7 @@ TagManager:
   - Ground
   - Interactable
   - RangedEnem
+  - DashEnem
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - Player
   - Enemy
   - RangedEnem
-  - 
+  - DashEnem
   - 
   - 
   - 

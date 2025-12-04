@@ -25,5 +25,14 @@ public class BulletDamage : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+        else if (other.CompareTag("DashEnem"))
+        {
+            DashEnem dashEnem = other.GetComponent<DashEnem>();
+            if (dashEnem != null)
+            {
+                dashEnem.TakeDamage(damage);
+                Destroy(gameObject);
+            }
+        }
     }
 }
