@@ -13,26 +13,42 @@ public class LevelLoader : MonoBehaviour
     int currentScene = 0;
     int randomLevel = 0;
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (opened)
         {
             randomLevel = Random.Range(minInclusive, maxExclusive);
             currentScene = SceneManager.GetActiveScene().buildIndex;
+
+            StaticData.Levels[StaticData.visited++] = currentScene;
             
+            
+            for (int i = 0; i < StaticData.visited; i++)
+            {
+                if (randomLevel == StaticData.Levels[i])
+                {
+                    i = -1;
+                    randomLevel = Random.Range(minInclusive, maxExclusive);
+                }
+            }
+            LoadNextLevel();
+            opened = false;
+            
+            /*
             if (randomLevel != currentScene)
             {
                 LoadNextLevel();
             }
-
-            while (randomLevel == currentScene)
+            else
             {
-                randomLevel = Random.Range(minInclusive, maxExclusive);
+                while (randomLevel == currentScene)
+                {
+                    randomLevel = Random.Range(minInclusive, maxExclusive);
 
-                if (randomLevel != currentScene)
-                    LoadNextLevel();
-            }
+                    if (randomLevel != currentScene)
+                        LoadNextLevel();
+                }
+            }*/
         }
     }
 
@@ -48,6 +64,14 @@ public class LevelLoader : MonoBehaviour
 
         yield return new WaitForSeconds(transitionTime);
 
-        SceneManager.LoadScene(levelIndex);
+        if (StaticData.visited >= 5)
+        {
+            SceneManager.LoadScene(7);
+        }
+        else
+        {
+            SceneManager.LoadScene(levelIndex);
+        }
+        
     }
 }
