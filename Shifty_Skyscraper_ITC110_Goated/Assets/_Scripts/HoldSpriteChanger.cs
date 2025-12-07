@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class HoldSpriteChanger : MonoBehaviour
+public class HoldSpriteChanger : MonoBehaviour, IInteractable
 {
     public bool isPressing = false;
     
@@ -13,22 +13,27 @@ public class HoldSpriteChanger : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
+    public bool CanInteract()
+    {
+        return !isPressing;
+    }
+    
+    public void Interact()
+    {
+        
+    }
+
     public void FixedUpdate()
     {
         if (isPressing)
         {
             if (newSprite != null)
-            {
                 spriteRenderer.sprite = newSprite;
-            }
         }
-        else
+        else if (!isPressing)
         {
             if (baseSprite != null)
-            {
                 spriteRenderer.sprite = baseSprite;
-            }
         }
     }
 }

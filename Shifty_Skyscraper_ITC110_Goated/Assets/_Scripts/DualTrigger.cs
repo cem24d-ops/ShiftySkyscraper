@@ -2,8 +2,7 @@ using UnityEngine;
 public class DualTrigger : MonoBehaviour
 {
     public string Title;
-    bool enable = true;
-    bool disable = false;
+    bool enable = true, disable = false;
     int enableSize = 0;
     int disableSize = 0;
 

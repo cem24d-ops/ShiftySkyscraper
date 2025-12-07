@@ -1,9 +1,7 @@
 using UnityEngine;
-
 public class HoldTrigger : MonoBehaviour
 {
     public string Title;
-    // true will enable the object, false will disable the object (has to be disabled for true to work, and vice versa)
     bool enable = true, disable = false;    
     int enableSize = 0;
     int disableSize = 0;
