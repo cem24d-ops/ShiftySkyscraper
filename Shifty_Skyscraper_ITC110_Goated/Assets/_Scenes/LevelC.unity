@@ -44265,11 +44265,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5289652608783692068, guid: 2a882447a24de154dbd8c30fc5c0d385, type: 3}
       propertyPath: maxExclusive
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5289652608783692068, guid: 2a882447a24de154dbd8c30fc5c0d385, type: 3}
       propertyPath: minInclusive
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5289652608783692068, guid: 2a882447a24de154dbd8c30fc5c0d385, type: 3}
       propertyPath: transitionTime
