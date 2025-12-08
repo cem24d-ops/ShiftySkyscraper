@@ -11,10 +11,11 @@ public class LevelLoader : MonoBehaviour
     
     public int minInclusive = 0, maxExclusive = 0;
     int currentScene = 0;
+    int sceneCount = 0;
     int randomLevel = 0;
-
+    
     void FixedUpdate()
-    {
+    {  
         if (opened)
         {
             randomLevel = Random.Range(minInclusive, maxExclusive);
@@ -55,7 +56,9 @@ public class LevelLoader : MonoBehaviour
 
     public void LoadNextLevel()
     {
+        sceneCount++;
         StartCoroutine(LoadLevel(randomLevel));
+        
     }
 
     IEnumerator LoadLevel (int levelIndex)
@@ -66,7 +69,7 @@ public class LevelLoader : MonoBehaviour
 
         if (StaticData.visited >= 4)
         {
-            SceneManager.LoadScene(7);
+            SceneManager.LoadScene(6);
         }
         else
         {

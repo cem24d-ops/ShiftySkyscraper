@@ -10,6 +10,11 @@ public class MainMenuScript : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+    public void RestartGame()
+    {
+        StaticData.visited = 0;
+        SceneManager.LoadScene(0);
+    }
 
     public void QuitGame()
     {
