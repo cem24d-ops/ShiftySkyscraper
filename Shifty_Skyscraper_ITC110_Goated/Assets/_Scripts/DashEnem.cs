@@ -11,6 +11,7 @@ public class DashEnem : MonoBehaviour
     public Transform player1;
     public Transform player2;
     public float detectionRange = 10f;
+    public bool isDashing = false;
 
     // Update is called once per frame
     void Update()
@@ -30,10 +31,10 @@ public class DashEnem : MonoBehaviour
             isChasing = false;
         }
 
-        if (isChasing)
+        if (isChasing && !isDashing)
         {
             Transform targetPlayer = (distanceToPlayer1 < distanceToPlayer2) ? player1 : player2;
-            Vector2 direction = (targetPlayer.position - transform.position).normalized;
+
             transform.position = Vector2.MoveTowards(transform.position, targetPlayer.position, speed * Time.deltaTime);
 
             DashEnemAttack dashAttack = GetComponent<DashEnemAttack>();

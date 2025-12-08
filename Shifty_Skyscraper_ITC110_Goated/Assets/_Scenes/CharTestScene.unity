@@ -361,7 +361,7 @@ Transform:
   m_GameObject: {fileID: 521122616}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -11.5, z: 0}
+  m_LocalPosition: {x: 13.82, y: -14.55, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -695,6 +695,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1430940908747812765, guid: f28f421b41b94134c8a24c5637a30d6f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.012
+      objectReference: {fileID: 0}
     - target: {fileID: 4522802032466338206, guid: f28f421b41b94134c8a24c5637a30d6f, type: 3}
       propertyPath: m_Name
       value: Player1Dummy
@@ -810,7 +814,7 @@ PrefabInstance:
       objectReference: {fileID: 476687525}
     - target: {fileID: 4601430167759323786, guid: ee6dd5fd5408dad428903e297b5d2943, type: 3}
       propertyPath: dashSpeed
-      value: 100
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4601430167759323786, guid: ee6dd5fd5408dad428903e297b5d2943, type: 3}
       propertyPath: dashDuration
@@ -1043,6 +1047,10 @@ PrefabInstance:
       propertyPath: pauseMenuPanel
       value: 
       objectReference: {fileID: 790903842}
+    - target: {fileID: 8110465776187162912, guid: 2d165d3bc0986a54ab5d5f4469e462a9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.009
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1066,7 +1074,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6778021646853513570, guid: a5504a97e99b245468bdba7584c38a00, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.5
+      value: -2.37
       objectReference: {fileID: 0}
     - target: {fileID: 6778021646853513570, guid: a5504a97e99b245468bdba7584c38a00, type: 3}
       propertyPath: m_LocalPosition.z

@@ -1,79 +1,80 @@
 using UnityEngine;
+using System.Collections;
 
 public class DashEnemAttack : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     public Transform attackPoint;
     public LayerMask playerLayers;
+
     public Transform player1;
     public Transform player2;
     public Transform targetPlayer;
+
     public float nextAttackTime = 0f;
     public float attackRate = 1f;
     public float attackRange = 0.5f;
+
     public float dashDetectRange = 5f;
     public float dashSpeed = 20f;
     public float dashDuration = 0.2f;
+
     public bool dashForward = true;
     float xDirection;
+
     Canvas gameCanvas;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    void Start()
+    {
+        gameCanvas = GameObject.Find("Canvas").GetComponent<Canvas>();
+    }
+
     void Update()
     {
-        // Check distance to both players
         float distanceToPlayer1 = Vector2.Distance(transform.position, player1.position);
         float distanceToPlayer2 = Vector2.Distance(transform.position, player2.position);
 
-        if (targetPlayer != null && Vector2.Distance(transform.position, targetPlayer.position) <= attackRange)
+        targetPlayer = distanceToPlayer1 < distanceToPlayer2 ? player1 : player2;
+
+        if (Vector2.Distance(transform.position, targetPlayer.position) <= dashDetectRange)
         {
-            xDirection = (targetPlayer.position - transform.position).x;
-            if (xDirection > 0)
-            {
-                dashForward = true;
-            }
-
-            else if (xDirection < 0)
-            {
-                dashForward = false;
-            }
-
-            // If either player is within attack range and cooldown has passed, attack
             if (Time.time >= nextAttackTime)
             {
-                Debug.Log("Dash Enemy is attacking!");
                 nextAttackTime = Time.time + 1f / attackRate;
-                Attack();
+                StartCoroutine(DashAttack());
             }
-                
         }
     }
-    
-    public void Attack()
-    {
-        // Detect players in range of attack
-        Collider2D[] hitPlayers = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayers);
-        gameCanvas = GameObject.Find("Canvas").GetComponent<Canvas>();
 
-        // Damage players
-        foreach (Collider2D player in hitPlayers)
+    IEnumerator DashAttack()
+    {
+        // Determine direction
+        xDirection = (targetPlayer.position - transform.position).x;
+
+        dashForward = xDirection > 0;
+
+        float timer = 0f;
+
+        while (timer < dashDuration)
         {
-            if (dashForward)
+            transform.Translate((dashForward ? Vector2.right : Vector2.left) * dashSpeed * Time.deltaTime);
+
+            // Damage while dashing
+            Collider2D[] hitPlayers = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayers);
+            foreach (Collider2D p in hitPlayers)
             {
-                transform.Translate(Vector2.right * dashSpeed * dashDuration);
                 gameCanvas.GetComponent<GameManager>().LoseLife();
             }
-            else
-            {
-                transform.Translate(Vector2.left * dashSpeed * dashDuration);
-                gameCanvas.GetComponent<GameManager>().LoseLife();
-            }
+
+            timer += Time.deltaTime;
+            yield return null;
         }
     }
 
     void OnDrawGizmosSelected()
-        {
-            if (attackPoint == null)
-                return;
-            Gizmos.DrawWireSphere(attackPoint.position, attackRange);
-        }
+    {
+        if (attackPoint == null)
+            return;
+
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+    }
 }
