@@ -64,7 +64,7 @@ public class LevelLoader : MonoBehaviour
 
         yield return new WaitForSeconds(transitionTime);
 
-        if (StaticData.visited >= 5)
+        if (StaticData.visited >= 4)
         {
             SceneManager.LoadScene(7);
         }
