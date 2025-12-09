@@ -24,7 +24,7 @@ public class RangedEnemAttack : MonoBehaviour
         // If either player is within attack range and cooldown has passed, attack
         if (Time.time >= nextAttackTime)
         {
-            Debug.Log("Ranged Enemy is checking for attack opportunity.");
+            //Debug.Log("Ranged Enemy is checking for attack opportunity.");
 
             // Check if either player is within attack range
             if (targetPlayer != null && Vector2.Distance(transform.position, targetPlayer.position) <= attackRange)
@@ -39,7 +39,7 @@ public class RangedEnemAttack : MonoBehaviour
                     fireForward = false;
                 }
 
-                Debug.Log("Ranged Enemy is attacking!");
+                //Debug.Log("Ranged Enemy is attacking!");
                 nextAttackTime = Time.time + 1f / attackRate;
                 Attack();
                 

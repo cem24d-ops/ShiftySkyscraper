@@ -25840,6 +25840,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -2043069754675971875, guid: f1091481ed3aa404487fab2f9997eb5d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2043069754675971875, guid: f1091481ed3aa404487fab2f9997eb5d, type: 3}
       propertyPath: m_Resource
       value: 
       objectReference: {fileID: 8300000, guid: 3f4ed3c1fba0f7047a41d6cadba0dafd, type: 3}
@@ -25931,11 +25935,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7397986767041155591, guid: f1091481ed3aa404487fab2f9997eb5d, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1333595597}
+    - target: {fileID: 7397986767041155591, guid: f1091481ed3aa404487fab2f9997eb5d, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetVolume
+      objectReference: {fileID: 0}
+    - target: {fileID: 7397986767041155591, guid: f1091481ed3aa404487fab2f9997eb5d, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SoundManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7397986767041155591, guid: f1091481ed3aa404487fab2f9997eb5d, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1091481ed3aa404487fab2f9997eb5d, type: 3}
+--- !u!114 &1092180759 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7397986767041155591, guid: f1091481ed3aa404487fab2f9997eb5d, type: 3}
+  m_PrefabInstance: {fileID: 1092180758}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1120758010
 GameObject:
   m_ObjectHideFlags: 0
@@ -28837,6 +28868,86 @@ Transform:
   - {fileID: 837202944}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1333595596
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1329577646837169540, guid: c8b7cbbd49367f0478619f1ab24a0677, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 3f4ed3c1fba0f7047a41d6cadba0dafd, type: 3}
+    - target: {fileID: 1329577646837169540, guid: c8b7cbbd49367f0478619f1ab24a0677, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3f4ed3c1fba0f7047a41d6cadba0dafd, type: 3}
+    - target: {fileID: 1915891148737572678, guid: c8b7cbbd49367f0478619f1ab24a0677, type: 3}
+      propertyPath: m_Name
+      value: LevelMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 6115247324796922075, guid: c8b7cbbd49367f0478619f1ab24a0677, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.23581
+      objectReference: {fileID: 0}
+    - target: {fileID: 6115247324796922075, guid: c8b7cbbd49367f0478619f1ab24a0677, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.7128
+      objectReference: {fileID: 0}
+    - target: {fileID: 6115247324796922075, guid: c8b7cbbd49367f0478619f1ab24a0677, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6115247324796922075, guid: c8b7cbbd49367f0478619f1ab24a0677, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6115247324796922075, guid: c8b7cbbd49367f0478619f1ab24a0677, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6115247324796922075, guid: c8b7cbbd49367f0478619f1ab24a0677, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6115247324796922075, guid: c8b7cbbd49367f0478619f1ab24a0677, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6115247324796922075, guid: c8b7cbbd49367f0478619f1ab24a0677, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6115247324796922075, guid: c8b7cbbd49367f0478619f1ab24a0677, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6115247324796922075, guid: c8b7cbbd49367f0478619f1ab24a0677, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8370934723455852009, guid: c8b7cbbd49367f0478619f1ab24a0677, type: 3}
+      propertyPath: VolumeSlider
+      value: 
+      objectReference: {fileID: 1092180759}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c8b7cbbd49367f0478619f1ab24a0677, type: 3}
+--- !u!114 &1333595597 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8370934723455852009, guid: c8b7cbbd49367f0478619f1ab24a0677, type: 3}
+  m_PrefabInstance: {fileID: 1333595596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34d5fccedd0c460499b292834ae18a1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1379908087 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4750771895441913311, guid: b8183749338ce2b4fb9a121b9e4f90c6, type: 3}
@@ -44729,3 +44840,4 @@ SceneRoots:
   - {fileID: 1787358599}
   - {fileID: 1320994186}
   - {fileID: 1120758011}
+  - {fileID: 1333595596}

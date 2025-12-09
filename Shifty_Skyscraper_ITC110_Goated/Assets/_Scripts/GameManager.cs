@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public Vector3 spawnPoint1;
     public Vector3 spawnPoint2;
     public AudioSource audioSource;
+    public GameObject DeathPanel;
     
     // Start is called before the first frame update
     void Start()
@@ -37,7 +38,9 @@ public class GameManager : MonoBehaviour
         if (numberOfLives <= 0)
         {
             Debug.Log("Game Over!");
-            Application.Quit();
+            DeathPanel.SetActive(true);
+            Time.timeScale = 0f;
+            //Application.Quit();
             // Implement game over logic here (e.g., reload scene, show game over screen)
         }
     }

@@ -63,6 +63,7 @@ public class DashEnemAttack : MonoBehaviour
             foreach (Collider2D p in hitPlayers)
             {
                 gameCanvas.GetComponent<GameManager>().LoseLife();
+                break;
             }
 
             timer += Time.deltaTime;

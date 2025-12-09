@@ -21,12 +21,12 @@ public class BasicEnemAttack : MonoBehaviour
         // If either player is within attack range and cooldown has passed, attack
         if (Time.time >= nextAttackTime)
         {
-            Debug.Log("Enemy is checking for attack opportunity.");
+            //Debug.Log("Enemy is checking for attack opportunity.");
 
             // Check if either player is within attack range
             if (distanceToPlayer1 <= attackRange || distanceToPlayer2 <= attackRange)
             {
-                Debug.Log("Enemy is attacking!");
+                //Debug.Log("Enemy is attacking!");
                 nextAttackTime = Time.time + 1f / attackRate;
                 Attack();
                 
@@ -45,6 +45,7 @@ public class BasicEnemAttack : MonoBehaviour
         {
             Debug.Log("Player hit: " + player.name);
             gameCanvas.GetComponent<GameManager>().LoseLife();
+            break;
         }
     }
 

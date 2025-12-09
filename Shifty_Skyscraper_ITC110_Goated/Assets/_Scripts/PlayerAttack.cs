@@ -10,7 +10,7 @@ public class PlayerAttack : MonoBehaviour
     public Transform attackPos;
     public LayerMask whatIsEnemy;
     public float attackRange;
-    public int damage;
+    public int damage = 2;
     public bool fireForward;
     public float bulletForce = 1500.0f;
     public bool inFireMode = false;

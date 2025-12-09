@@ -230,9 +230,10 @@ MonoBehaviour:
   health: 7
   speed: 2
   isChasing: 0
-  player1: {fileID: 0}
-  player2: {fileID: 0}
+  player1: {fileID: 7676616011775729798, guid: f28f421b41b94134c8a24c5637a30d6f, type: 3}
+  player2: {fileID: 3661683939715486072, guid: 2d165d3bc0986a54ab5d5f4469e462a9, type: 3}
   detectionRange: 8
+  isDashing: 0
 --- !u!114 &4601430167759323786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -249,12 +250,16 @@ MonoBehaviour:
   playerLayers:
     serializedVersion: 2
     m_Bits: 128
-  player1: {fileID: 0}
-  player2: {fileID: 0}
+  player1: {fileID: 7676616011775729798, guid: f28f421b41b94134c8a24c5637a30d6f, type: 3}
+  player2: {fileID: 3661683939715486072, guid: 2d165d3bc0986a54ab5d5f4469e462a9, type: 3}
+  targetPlayer: {fileID: 0}
   nextAttackTime: 0
-  attackRate: 1
+  attackRate: 0.5
   attackRange: 0.5
+  dashDetectRange: 5
   dashSpeed: 20
+  dashDuration: 0.2
+  dashForward: 1
 --- !u!1 &4627259037325630827
 GameObject:
   m_ObjectHideFlags: 0

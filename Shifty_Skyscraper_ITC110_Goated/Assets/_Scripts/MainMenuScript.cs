@@ -5,7 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuScript : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    GameManager gameManager;
+    // Start is called once before the
+    //  first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        gameManager = FindObjectOfType<GameManager>();
+    }
     public void PlayGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -14,6 +20,7 @@ public class MainMenuScript : MonoBehaviour
     {
         StaticData.visited = 0;
         SceneManager.LoadScene(0);
+        gameManager.numberOfLives = 5;
     }
 
     public void QuitGame()
@@ -21,4 +28,4 @@ public class MainMenuScript : MonoBehaviour
         Debug.Log("Quit!");
         Application.Quit();
     }
-}
+} 
