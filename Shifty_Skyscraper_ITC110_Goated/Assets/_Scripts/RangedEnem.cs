@@ -11,6 +11,8 @@ public class RangedEnem : MonoBehaviour
     public Transform player1;
     public Transform player2;
     public float detectionRange = 10f;
+    Animator animator;
+    SpriteRenderer spriteRenderer;
 
     // Update is called once per frame
     void Update()

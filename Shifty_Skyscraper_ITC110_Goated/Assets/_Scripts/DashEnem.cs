@@ -12,6 +12,8 @@ public class DashEnem : MonoBehaviour
     public Transform player2;
     public float detectionRange = 10f;
     public bool isDashing = false;
+    Animator animator;
+    SpriteRenderer spriteRenderer;
 
     // Update is called once per frame
     void Update()

@@ -253,7 +253,7 @@ Animator:
   m_GameObject: {fileID: 8707994833795355507}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c97c8152048265f46b48c4bbc8cae062, type: 2}
+  m_Controller: {fileID: 9100000, guid: 80ca05467e0cacb4ab18df4b2b4def08, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -325,7 +325,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2413793, y: 0.6034483}
+    oldSize: {x: 0.6666667, y: 1.6666666}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
