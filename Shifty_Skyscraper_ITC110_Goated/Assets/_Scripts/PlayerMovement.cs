@@ -19,12 +19,18 @@ public class PlayerMovement : MonoBehaviour
     public bool shouldJump = false;
     public InteractionDetector interactionDetector;
 
+     Animator animator;
+
+    SpriteRenderer spriteRenderer;
+
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -42,6 +48,22 @@ public class PlayerMovement : MonoBehaviour
             rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
         }
 
+        // animate!
+        if (Input.GetKey(rightKey))
+        {
+            animator.SetBool("isWalk", true);
+            spriteRenderer.flipX = false;
+        }
+        else if (Input.GetKey(leftKey))
+        {
+            animator.SetBool("isWalk", true);
+            spriteRenderer.flipX = true;
+        }
+        else
+        {
+            animator.SetBool("isWalk", false);
+        }
+        
         // get jump input
         if (Input.GetKeyDown(jumpKey) && isGrounded)
         {
@@ -67,6 +89,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.gameObject.tag == "Ground")
             isGrounded = true;
+            // animate!
+            animator.SetBool("isJump", false);
     }
 
     void OnTriggerExit2D(Collider2D other)
@@ -75,6 +99,8 @@ public class PlayerMovement : MonoBehaviour
             return;
 
         isGrounded = false;
+         // animate!
+            animator.SetBool("isJump", true);
     }
 }
 

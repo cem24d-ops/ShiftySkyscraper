@@ -17,9 +17,12 @@ public class PlayerAttack : MonoBehaviour
     public KeyCode switchModeKey;
     public GameObject bullet;
     public GameObject firePoint;
+    Animator animator;
+    SpriteRenderer spriteRenderer;
     // Update is called once per frame
     void Update()
     {
+        
         if (Input.GetKeyDown(switchModeKey))
         {
             if (inFireMode)
@@ -41,6 +44,9 @@ public class PlayerAttack : MonoBehaviour
                 {
                     MeleeAttack();
                     timeBetweenAttack = startTimeBetweenAttack;
+                    // animate!
+            animator.SetTrigger("attack");
+            
                 }
             }
             else
@@ -64,6 +70,7 @@ public class PlayerAttack : MonoBehaviour
             if (Input.GetKeyDown(attackKey))
             {
                 FireBullet();
+                animator.SetTrigger("gun");
             }
         }
     }

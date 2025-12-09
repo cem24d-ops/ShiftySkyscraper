@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: ec3d8bee50b91394ab2af4b0a24fe3f5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8439100266821813760
+    second: Bob_Sprites_WITH_A_GUN 1_0
+  - first:
+      213: -5807344917076115107
+    second: Bob_Sprites_WITH_A_GUN 1_1
+  - first:
+      213: -178091933430197495
+    second: Bob_Sprites_WITH_A_GUN 1_2
+  - first:
+      213: 7503094700762795776
+    second: Bob_Sprites_WITH_A_GUN 1_3
+  - first:
+      213: -3273678453094868445
+    second: Bob_Sprites_WITH_A_GUN 1_4
+  - first:
+      213: -5192434329407249377
+    second: Bob_Sprites_WITH_A_GUN 1_5
+  - first:
+      213: -5994620518974188029
+    second: Bob_Sprites_WITH_A_GUN 1_6
+  - first:
+      213: 9152296456626629534
+    second: Bob_Sprites_WITH_A_GUN 1_7
+  - first:
+      213: 7371582633819383600
+    second: Bob_Sprites_WITH_A_GUN 1_8
+  - first:
+      213: -2131592081716412254
+    second: Bob_Sprites_WITH_A_GUN 1_9
+  - first:
+      213: -7610706138450686370
+    second: Bob_Sprites_WITH_A_GUN 1_10
+  - first:
+      213: 8013217520390317325
+    second: Bob_Sprites_WITH_A_GUN 1_11
+  - first:
+      213: 4388283673030287214
+    second: Bob_Sprites_WITH_A_GUN 1_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 65
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bob_Sprites_WITH_A_GUN 1_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 153
+        width: 14
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00a7e24050b42ea80800000000000000
+      internalID: -8439100266821813760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bob_Sprites_WITH_A_GUN 1_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 154
+        width: 14
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d510289019a286fa0800000000000000
+      internalID: -5807344917076115107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bob_Sprites_WITH_A_GUN 1_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 153
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 903d782845a478df0800000000000000
+      internalID: -178091933430197495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bob_Sprites_WITH_A_GUN 1_3
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 155
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00f051390e8502860800000000000000
+      internalID: 7503094700762795776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bob_Sprites_WITH_A_GUN 1_4
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 106
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32a1e66aace8192d0800000000000000
+      internalID: -3273678453094868445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bob_Sprites_WITH_A_GUN 1_5
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 105
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f142324fc74c0f7b0800000000000000
+      internalID: -5192434329407249377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bob_Sprites_WITH_A_GUN 1_6
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 105
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 306964b1664decca0800000000000000
+      internalID: -5994620518974188029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bob_Sprites_WITH_A_GUN 1_7
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 57
+        width: 18
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9beb48e22d730f70800000000000000
+      internalID: 9152296456626629534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bob_Sprites_WITH_A_GUN 1_8
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 58
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0372e31695f1d4660800000000000000
+      internalID: 7371582633819383600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bob_Sprites_WITH_A_GUN 1_9
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 57
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a0024b9b401b62e0800000000000000
+      internalID: -2131592081716412254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bob_Sprites_WITH_A_GUN 1_10
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 9
+        width: 18
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5e03cf1717516690800000000000000
+      internalID: -7610706138450686370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bob_Sprites_WITH_A_GUN 1_11
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 10
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d052dc201eaa43f60800000000000000
+      internalID: 8013217520390317325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bob_Sprites_WITH_A_GUN 1_12
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 9
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6fdd9020c056ec30800000000000000
+      internalID: 4388283673030287214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Bob_Sprites_WITH_A_GUN 1_0: -8439100266821813760
+      Bob_Sprites_WITH_A_GUN 1_1: -5807344917076115107
+      Bob_Sprites_WITH_A_GUN 1_10: -7610706138450686370
+      Bob_Sprites_WITH_A_GUN 1_11: 8013217520390317325
+      Bob_Sprites_WITH_A_GUN 1_12: 4388283673030287214
+      Bob_Sprites_WITH_A_GUN 1_2: -178091933430197495
+      Bob_Sprites_WITH_A_GUN 1_3: 7503094700762795776
+      Bob_Sprites_WITH_A_GUN 1_4: -3273678453094868445
+      Bob_Sprites_WITH_A_GUN 1_5: -5192434329407249377
+      Bob_Sprites_WITH_A_GUN 1_6: -5994620518974188029
+      Bob_Sprites_WITH_A_GUN 1_7: 9152296456626629534
+      Bob_Sprites_WITH_A_GUN 1_8: 7371582633819383600
+      Bob_Sprites_WITH_A_GUN 1_9: -2131592081716412254
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
