@@ -19,6 +19,12 @@ public class PlayerAttack : MonoBehaviour
     public GameObject firePoint;
     Animator animator;
     SpriteRenderer spriteRenderer;
+
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -42,11 +48,10 @@ public class PlayerAttack : MonoBehaviour
 
                 if (Input.GetKeyDown(attackKey))
                 {
+                    // animate!
+                    animator.SetTrigger("attack");
                     MeleeAttack();
                     timeBetweenAttack = startTimeBetweenAttack;
-                    // animate!
-            animator.SetTrigger("attack");
-            
                 }
             }
             else
@@ -69,6 +74,7 @@ public class PlayerAttack : MonoBehaviour
 
             if (Input.GetKeyDown(attackKey))
             {
+                
                 FireBullet();
                 animator.SetTrigger("gun");
             }

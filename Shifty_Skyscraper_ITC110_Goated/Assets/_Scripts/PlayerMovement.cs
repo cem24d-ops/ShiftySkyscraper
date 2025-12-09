@@ -42,6 +42,7 @@ public class PlayerMovement : MonoBehaviour
         else if (Input.GetKey(rightKey))
         {
             rb.linearVelocity = new Vector2(moveSpeed, rb.linearVelocity.y);
+
         }
         else
         {
@@ -69,6 +70,8 @@ public class PlayerMovement : MonoBehaviour
         {
             //push the rigidbody UP
             rb.AddForce(transform.up * jumpForce);
+             // animate!
+            animator.SetBool("isJump", true);
         }
 
         // get interact input
@@ -88,9 +91,11 @@ public class PlayerMovement : MonoBehaviour
     void OnTriggerStay2D(Collider2D other)
     {
         if (other.gameObject.tag == "Ground")
+        {
             isGrounded = true;
             // animate!
             animator.SetBool("isJump", false);
+        }
     }
 
     void OnTriggerExit2D(Collider2D other)
