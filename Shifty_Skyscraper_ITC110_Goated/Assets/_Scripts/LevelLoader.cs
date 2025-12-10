@@ -11,7 +11,6 @@ public class LevelLoader : MonoBehaviour
     
     public int minInclusive = 0, maxExclusive = 0;
     int currentScene = 0;
-    int sceneCount = 0;
     int randomLevel = 0;
     
     void FixedUpdate()
@@ -21,44 +20,29 @@ public class LevelLoader : MonoBehaviour
             randomLevel = Random.Range(minInclusive, maxExclusive);
             currentScene = SceneManager.GetActiveScene().buildIndex;
 
-            StaticData.Levels[StaticData.visited++] = currentScene;
+            StaticData.Levels[StaticData.visited] = currentScene;
+            StaticData.visited++;
             
-            
-            for (int i = 0; i < StaticData.visited; i++)
+            if (StaticData.visited < 4)
             {
-                if (randomLevel == StaticData.Levels[i])
+                for (int i = 0; i < StaticData.visited; i++)
                 {
-                    i = -1;
-                    randomLevel = Random.Range(minInclusive, maxExclusive);
+                    if (randomLevel == StaticData.Levels[i])
+                    {
+                        i = -1;
+                        randomLevel = Random.Range(minInclusive, maxExclusive);
+                    }
                 }
             }
             LoadNextLevel();
             opened = false;
-            
-            /*
-            if (randomLevel != currentScene)
-            {
-                LoadNextLevel();
-            }
-            else
-            {
-                while (randomLevel == currentScene)
-                {
-                    randomLevel = Random.Range(minInclusive, maxExclusive);
-
-                    if (randomLevel != currentScene)
-                        LoadNextLevel();
-                }
-            }*/
         }
     }
 
 
     public void LoadNextLevel()
     {
-        sceneCount++;
         StartCoroutine(LoadLevel(randomLevel));
-        
     }
 
     IEnumerator LoadLevel (int levelIndex)
@@ -67,9 +51,9 @@ public class LevelLoader : MonoBehaviour
 
         yield return new WaitForSeconds(transitionTime);
 
-        if (StaticData.visited >= 4)
+        if (StaticData.visited == 4)
         {
-            SceneManager.LoadScene(6);
+            SceneManager.LoadScene("LevelFinal");
         }
         else
         {

@@ -4883,7 +4883,7 @@ PrefabInstance:
     - target: {fileID: 2244753240766429040, guid: a4783732ee48db446ae683703777fa9d, type: 3}
       propertyPath: targetPlayer
       value: 
-      objectReference: {fileID: 210120234}
+      objectReference: {fileID: 0}
     - target: {fileID: 3132330189979089479, guid: a4783732ee48db446ae683703777fa9d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.05
@@ -5130,8 +5130,8 @@ MonoBehaviour:
   player2: {fileID: 4217109071335592959}
   button1: {fileID: 682454918}
   button2: {fileID: 987302841}
-  p1Col: {fileID: 3423409199706586084}
-  p2Col: {fileID: 4217109071335592958}
+  p1Col: {fileID: 3423409199706586090}
+  p2Col: {fileID: 4217109071335592964}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -26209,7 +26209,7 @@ PrefabInstance:
     - target: {fileID: 2244753240766429040, guid: a4783732ee48db446ae683703777fa9d, type: 3}
       propertyPath: targetPlayer
       value: 
-      objectReference: {fileID: 210120234}
+      objectReference: {fileID: 0}
     - target: {fileID: 3132330189979089479, guid: a4783732ee48db446ae683703777fa9d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.251827
@@ -42260,11 +42260,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f28f421b41b94134c8a24c5637a30d6f, type: 3}
---- !u!60 &3423409199706586084 stripped
-PolygonCollider2D:
-  m_CorrespondingSourceObject: {fileID: 7970815152042293411, guid: f28f421b41b94134c8a24c5637a30d6f, type: 3}
-  m_PrefabInstance: {fileID: 3423409199706586083}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &3423409199706586085 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9181693753610989674, guid: f28f421b41b94134c8a24c5637a30d6f, type: 3}
@@ -42276,6 +42271,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8158147eb9a53448ba468cd2527aeb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!70 &3423409199706586090 stripped
+CapsuleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 5964910413257521703, guid: f28f421b41b94134c8a24c5637a30d6f, type: 3}
+  m_PrefabInstance: {fileID: 3423409199706586083}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4217109071335592957
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42337,11 +42337,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d165d3bc0986a54ab5d5f4469e462a9, type: 3}
---- !u!60 &4217109071335592958 stripped
-PolygonCollider2D:
-  m_CorrespondingSourceObject: {fileID: 6866090567135326014, guid: 2d165d3bc0986a54ab5d5f4469e462a9, type: 3}
-  m_PrefabInstance: {fileID: 4217109071335592957}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &4217109071335592959 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7464852432339259380, guid: 2d165d3bc0986a54ab5d5f4469e462a9, type: 3}
@@ -42353,6 +42348,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8158147eb9a53448ba468cd2527aeb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!70 &4217109071335592964 stripped
+CapsuleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 4446300909527861208, guid: 2d165d3bc0986a54ab5d5f4469e462a9, type: 3}
+  m_PrefabInstance: {fileID: 4217109071335592957}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

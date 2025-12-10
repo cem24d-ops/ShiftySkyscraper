@@ -19,11 +19,13 @@ public class PlayerAttack : MonoBehaviour
     public GameObject firePoint;
     Animator animator;
     SpriteRenderer spriteRenderer;
+    PlayerMovement playerMovement;
 
     void Start()
     {
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        playerMovement = GetComponent<PlayerMovement>();
     }
     // Update is called once per frame
     void Update()
@@ -63,18 +65,17 @@ public class PlayerAttack : MonoBehaviour
         {
             float horizontalInput = Input.GetAxis("Horizontal");
 
-            if (horizontalInput > 0)
+            if (horizontalInput > 0 || !playerMovement.spriteRenderer.flipX)
             {
                 fireForward = true;
             }
-            else if (horizontalInput < 0)
+            else if (horizontalInput < 0 || playerMovement.spriteRenderer.flipX)
             {
                 fireForward = false;
             }
 
             if (Input.GetKeyDown(attackKey))
             {
-                
                 FireBullet();
                 animator.SetTrigger("gun");
             }

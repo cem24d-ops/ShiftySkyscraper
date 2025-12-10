@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
 
      Animator animator;
 
-    SpriteRenderer spriteRenderer;
+    public SpriteRenderer spriteRenderer;
 
 
     // Start is called before the first frame update

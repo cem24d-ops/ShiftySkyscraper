@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3824747893479393608}
   - component: {fileID: 1753156288816702604}
-  - component: {fileID: 4163793159595869124}
+  - component: {fileID: 329069707984308443}
   - component: {fileID: 5287868861767669778}
   - component: {fileID: 8579240695837983054}
   - component: {fileID: 6199380647341221977}
@@ -94,8 +94,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &4163793159595869124
-PolygonCollider2D:
+--- !u!70 &329069707984308443
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -129,23 +129,8 @@ PolygonCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6666667, y: 1.6666666}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.33333334, y: 0.8333334}
-      - {x: -0.3382586, y: -0.7573706}
-      - {x: 0.33445498, y: -0.75849235}
-      - {x: 0.33333334, y: 0.7380952}
-      - {x: 0.2857143, y: 0.8333334}
-  m_UseDelaunayMesh: 0
+  m_Size: {x: 0.6, y: 1.6}
+  m_Direction: 0
 --- !u!50 &5287868861767669778
 Rigidbody2D:
   serializedVersion: 5

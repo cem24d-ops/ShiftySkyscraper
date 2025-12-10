@@ -37011,8 +37011,8 @@ MonoBehaviour:
   player2: {fileID: 4217109071335592959}
   button1: {fileID: 1746051193}
   button2: {fileID: 1930427}
-  p1Col: {fileID: 3423409199706586089}
-  p2Col: {fileID: 4217109071335592963}
+  p1Col: {fileID: 3423409199706586090}
+  p2Col: {fileID: 4217109071335592964}
 --- !u!1 &1616290484
 GameObject:
   m_ObjectHideFlags: 0
@@ -38112,19 +38112,19 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -2043069754675971875, guid: f1091481ed3aa404487fab2f9997eb5d, type: 3}
+    - target: {fileID: 0}
       propertyPath: m_Volume
       value: 0.3
       objectReference: {fileID: 0}
-    - target: {fileID: -2043069754675971875, guid: f1091481ed3aa404487fab2f9997eb5d, type: 3}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -2043069754675971875, guid: f1091481ed3aa404487fab2f9997eb5d, type: 3}
+    - target: {fileID: 0}
       propertyPath: m_Resource
       value: 
       objectReference: {fileID: 8300000, guid: 0902456b54837794cbe77086e1bdb23c, type: 3}
-    - target: {fileID: -2043069754675971875, guid: f1091481ed3aa404487fab2f9997eb5d, type: 3}
+    - target: {fileID: 0}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 0902456b54837794cbe77086e1bdb23c, type: 3}
@@ -38244,7 +38244,8 @@ PrefabInstance:
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -38403,9 +38404,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8158147eb9a53448ba468cd2527aeb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!60 &3423409199706586089 stripped
-PolygonCollider2D:
-  m_CorrespondingSourceObject: {fileID: 7970815152042293411, guid: f28f421b41b94134c8a24c5637a30d6f, type: 3}
+--- !u!70 &3423409199706586090 stripped
+CapsuleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 5964910413257521703, guid: f28f421b41b94134c8a24c5637a30d6f, type: 3}
   m_PrefabInstance: {fileID: 3423409199706586083}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4217109071335592957
@@ -38485,9 +38486,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8158147eb9a53448ba468cd2527aeb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!60 &4217109071335592963 stripped
-PolygonCollider2D:
-  m_CorrespondingSourceObject: {fileID: 6866090567135326014, guid: 2d165d3bc0986a54ab5d5f4469e462a9, type: 3}
+--- !u!70 &4217109071335592964 stripped
+CapsuleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 4446300909527861208, guid: 2d165d3bc0986a54ab5d5f4469e462a9, type: 3}
   m_PrefabInstance: {fileID: 4217109071335592957}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4866245527530265561

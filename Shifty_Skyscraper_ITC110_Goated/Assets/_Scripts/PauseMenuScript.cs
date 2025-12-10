@@ -31,4 +31,11 @@ public class PauseMenuScript : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Debug.Log("Level Restarted");
     }
+    public void RestartGame()
+    {
+        Time.timeScale = 1f;
+        StaticData.visited = 0;
+        SceneManager.LoadScene(0);
+        gameManager.numberOfLives = 5;
+    }
 }

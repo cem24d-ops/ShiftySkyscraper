@@ -119,7 +119,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &439066295
+--- !u!1 &205912903
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,9 +127,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 439066298}
-  - component: {fileID: 439066297}
-  - component: {fileID: 439066296}
+  - component: {fileID: 205912906}
+  - component: {fileID: 205912905}
+  - component: {fileID: 205912904}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -137,13 +137,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &439066296
+--- !u!114 &205912904
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 439066295}
+  m_GameObject: {fileID: 205912903}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
@@ -168,13 +168,13 @@ MonoBehaviour:
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
   m_ScrollDeltaPerTick: 6
---- !u!114 &439066297
+--- !u!114 &205912905
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 439066295}
+  m_GameObject: {fileID: 205912903}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
@@ -183,13 +183,13 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
---- !u!4 &439066298
+--- !u!4 &205912906
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 439066295}
+  m_GameObject: {fileID: 205912903}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -15271,7 +15271,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1735327967}
   - component: {fileID: 1735327966}
-  - component: {fileID: 1735327965}
   m_Layer: 0
   m_Name: Elevator_PH
   m_TagString: Untagged
@@ -15279,29 +15278,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1735327965
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1735327964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5976d1eb9bf89814fa8ab0d09cd05e32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Title: Elevator
-  triggerSize: 0
-  enableObject:
-  - {fileID: 0}
-  disableObject: []
-  objectTrigger:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  triggered: 0
 --- !u!212 &1735327966
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15464,6 +15440,22 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3876855250495002795, guid: 6b760401479acbc43a652adb055c5071, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3876855250495002795, guid: 6b760401479acbc43a652adb055c5071, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3876855250495002795, guid: 6b760401479acbc43a652adb055c5071, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 3876855250495002795, guid: 6b760401479acbc43a652adb055c5071, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     - target: {fileID: 4075344061509992902, guid: 6b760401479acbc43a652adb055c5071, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -15519,7 +15511,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 1475616585}
   - {fileID: 8167538056792995129}
-  - {fileID: 439066298}
   - {fileID: 1735327967}
   - {fileID: 1625865368}
   - {fileID: 935669715}
+  - {fileID: 205912906}

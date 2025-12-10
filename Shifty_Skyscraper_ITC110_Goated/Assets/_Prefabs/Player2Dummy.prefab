@@ -187,7 +187,7 @@ CapsuleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.15, y: 0.5}
+  m_Size: {x: 0.15, y: 0.4}
   m_Direction: 0
 --- !u!114 &3770342088784213476
 MonoBehaviour:
@@ -212,7 +212,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3661683939715486072}
   - component: {fileID: 3236222129498031695}
-  - component: {fileID: 6866090567135326014}
+  - component: {fileID: 4446300909527861208}
   - component: {fileID: 5132594707112069735}
   - component: {fileID: 5777270080482136739}
   - component: {fileID: 5734827514966026503}
@@ -297,8 +297,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &6866090567135326014
-PolygonCollider2D:
+--- !u!70 &4446300909527861208
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -332,28 +332,8 @@ PolygonCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2413793, y: 0.6034483}
-    newSize: {x: 0.2413793, y: 0.6034483}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.09413341, y: 0.21169755}
-      - {x: 0.05682043, y: 0.2465387}
-      - {x: 0.0012492009, y: 0.2610798}
-      - {x: -0.06270499, y: 0.24214607}
-      - {x: -0.095602304, y: 0.211939}
-      - {x: -0.09754601, y: -0.13017023}
-      - {x: -0.08112332, y: -0.24305776}
-      - {x: 0, y: -0.25}
-      - {x: 0.08557609, y: -0.2442098}
-      - {x: 0.09728956, y: -0.13429268}
-  m_UseDelaunayMesh: 0
+  m_Size: {x: 0.19, y: 0.5}
+  m_Direction: 0
 --- !u!50 &5132594707112069735
 Rigidbody2D:
   serializedVersion: 5
@@ -419,7 +399,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2413793, y: 0.6034483}
+    oldSize: {x: 0.21538462, y: 0.53846157}
     newSize: {x: 0.2413793, y: 0.6034483}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
