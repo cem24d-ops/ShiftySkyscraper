@@ -53,7 +53,7 @@ public class LevelLoader : MonoBehaviour
 
         if (StaticData.visited == 4)
         {
-            SceneManager.LoadScene("LevelFinal");
+            SceneManager.LoadScene(5);
         }
         else
         {
